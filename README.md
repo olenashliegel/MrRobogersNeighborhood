@@ -24,25 +24,63 @@ This project was created using HTML, CSS, and JavaScript technologies.
 
 ## Tests
 ```
-**Describe: checkingInputString()**
+Describe: isStringNumeric()
 
 Test1: "It should return true when input string contains only number"
 Code: 
 const inputTextTest1 = "4204"
-checkingInputString(inputTextTest1);
+isStringNumeric(inputTextTest1);
 Expected Output: true  
 
 Test2: "It should return false when input string contains non numeric symbols"
 Code: 
 const inputTextTest2 = "42a04"
-checkingInputString(inputTextTest2);
+isStringNumeric(inputTextTest2);
 Expected Output: false
 
 Test3: "It should return false when input string is empty"
 Code: 
 const inputTextTest3 = ""
-checkingInputString(inputTextTest3);
+isStringNumeric(inputTextTest3);
 Expected Output: false
+
+Test4: "It should return true when input string contains only numbers and spaces in the beginning and in the end of string"
+Code: 
+const inputTextTest4 = " 4204 "
+isStringNumeric(inputTextTest4);
+Expected Output: true
+
+Describe getNumberFromInputString()
+
+Test5: "It should return number from input string"
+Code: 
+const inputTextTest5 = "43"
+getNumberFromInputString(inputTextTest5);
+Expected Output: 43
+
+Test6: "It should return null if string contains non numeric symbols"
+Code: 
+const inputTextTest6 = "43as"
+getNumberFromInputString(inputTextTest6);
+Expected Output: null
+
+Test7: "It should return number from input string with empty spaces in the begging and ending"
+Code: 
+const inputTextTest7 = " 432 "
+getNumberFromInputString(inputTextTest7);
+Expected Output: 432
+
+Test8: "It should return number from input string if input number starts from  0"
+Code: 
+const inputTextTest8 = "013"
+getNumberFromInputString(inputTextTest8);
+Expected Output: 13
+
+Test9: "It should return null if string is empty"
+Code: 
+const inputTextTest9 = ""
+getNumberFromInputString(inputTextTest9);
+Expected Output: null
 
 ```
 ## Known Bugs
