@@ -82,6 +82,20 @@ const inputTextTest9 = ""
 getNumberFromInputString(inputTextTest9);
 Expected Output: null
 
+Describe creatingStringArray()
+Test10: "It should return string array  of values from 0 to the number"
+Code: 
+const inputNumberTest10 = 3
+creatingStringArray (inputNumberTest10);
+Expected Output: ["0", "1", "2", "3"]
+
+Test11: "It should return string array  with one value 0 if number is 0"
+Code: 
+const inputNumberTest11 = 0
+creatingStringArray (inputNumberTest11);
+Expected Output: ["0"]
+
+
 ```
 ## Known Bugs
 
