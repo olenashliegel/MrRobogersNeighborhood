@@ -24,7 +24,26 @@ This project was created using HTML, CSS, and JavaScript technologies.
 
 ## Tests
 ```
-TEST ARE HERE
+**Describe: checkingInputString()**
+
+Test1: "It should return true when input string contains only number"
+Code: 
+const inputTextTest1 = "4204"
+checkingInputString(inputTextTest1);
+Expected Output: true  
+
+Test2: "It should return false when input string contains non numeric symbols"
+Code: 
+const inputTextTest2 = "42a04"
+checkingInputString(inputTextTest2);
+Expected Output: false
+
+Test3: "It should return false when input string is empty"
+Code: 
+const inputTextTest3 = ""
+checkingInputString(inputTextTest3);
+Expected Output: false
+
 ```
 ## Known Bugs
 
