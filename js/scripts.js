@@ -22,6 +22,25 @@ function creatingStringArray(inputNumber) {
   return stringArray;
 }
 
+// Substitutes specific elements in the array based on the presence of digits 1, 2, or 3.
+function substituteArrayElement(stringArray) {
+  const oneDigitRegex = /1/;
+  const twoDigitRegex = /2/;
+  const threeDigitRegex = /3/;
+  return stringArray.map(function (element) {
+    if (threeDigitRegex.test(element)) {
+      return "Won't you be my neighbor?";
+    } else if (twoDigitRegex.test(element)) {
+      return "Boop!";
+    } else if (oneDigitRegex.test(element)) {
+      return "Beep!";
+    }
+    else {
+      return element;
+    }
+  });
+}
+
 
 // const inputTextTest1 = "4204";
 // console.log(isStringNumeric(inputTextTest1));
@@ -47,4 +66,16 @@ function creatingStringArray(inputNumber) {
 // console.log(creatingStringArray(inputNumberTest10));
 // const inputNumberTest11 = 0;
 // console.log(creatingStringArray(inputNumberTest11));
+
+const inputArrayTest12 = ["0"];
+console.log(substituteArrayElement(inputArrayTest12));
+const inputArrayTest13 = ["0", "1"];
+console.log(substituteArrayElement(inputArrayTest13));
+const inputArrayTest14 = ["0", "1", "2"];
+console.log(substituteArrayElement(inputArrayTest14));
+const inputArrayTest15 = ["0", "1", "2", "3", "4", "5"];
+console.log(substituteArrayElement(inputArrayTest15));
+const inputArrayTest16 = ["10", "12", "13", "23"];
+console.log(substituteArrayElement(inputArrayTest16));
+
 
