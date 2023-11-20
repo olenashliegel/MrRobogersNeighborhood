@@ -1,0 +1,12 @@
+#resultDiv {
+  border: solid rgb(52, 136, 220);
+}
+
+.columns {
+  display: flex;
+
+}
+
+.columns div {
+  border: solid rgb(186, 220, 52);
+}
