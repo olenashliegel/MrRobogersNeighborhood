@@ -21,7 +21,7 @@ This project was created using HTML, CSS, and JavaScript technologies.
 * Navigate to the new repository: `$ cd {path_to_new_repo_name}`
 * Open with an editor (e.g., VSCode): `$ code .`
 * Right-click on `index.html` and select `Open with Live Server`
-* Test data can be found by path js/testdata.js.
+* Test data can be found by path `js/testdata.js`.
 
 ## Tests
 ```
