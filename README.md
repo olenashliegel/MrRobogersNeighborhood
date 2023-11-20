@@ -20,7 +20,8 @@ This project was created using HTML, CSS, and JavaScript technologies.
 * Clone the repository to a new directory: `$ git clone https://github.com/olenashliegel/MrRobogersNeighborhood.git {new_repo_name}`
 * Navigate to the new repository: `$ cd {path_to_new_repo_name}`
 * Open with an editor (e.g., VSCode): `$ code .`
-* Right-click on `index.html` and select `Open with Live Server`.
+* Right-click on `index.html` and select `Open with Live Server`
+* Test data can be found by path js/testdata.js.
 
 ## Tests
 ```
@@ -125,9 +126,10 @@ substituteArrayElement (inputArrayTest16);
 Expected Output: ["Beep!", "Boop!", "Won't you be my neighbor?", "Won't you be my neighbor?"]
 
 ```
+
 ## Known Bugs
 
-* TBD
+* Displaying h2 is not vertically aligned when result is displayed in columns
 
 ## License
 
@@ -137,4 +139,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-Copyright (c) 11/18/2023 Olena Shliegel
+Copyright (c) 11/20/2023 Olena Shliegel
