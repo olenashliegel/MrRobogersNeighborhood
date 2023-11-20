@@ -8,15 +8,40 @@
 </head>
 
 <body>
-  <h1>Welcome to Mr. Roboger's Neighborhood</h1>
-  <div id="inputDiv">
+  <div class="about">
+    <h1>Welcome to Mr. Roboger's Neighborhood</h1>
+    <p>This interactive app transforms numbers into fun phrases. Simply enter a
+      number into the field below, and the app will generate a list of all numbers from 0 up to your input, with the
+      following whimsical substitutions:</p>
+    <ul>
+      <li>Numbers containing the digit 1 are transformed into "Beep!"</li>
+      <li>Numbers containing the digit 2 become "Boop!"</li>
+      <li>Numbers containing the digit 3 are turned into "Won't you be my neighbor?"</li>
+    </ul>
+    <p>Explore and enjoy the playful transformations crafted by Mr. Roboger!</p>
+  </div>
+  <div id="inputDiv" class="input">
     <form id="inputForm">
-      <label for="inputNumber"></label>
+      <label for="inputNumber">Enter a number:</label>
       <input name="inputNumber" id="inputNumber" type="text">
       <button type="submit">Show Result</button>
+      <button id="reset" type="button" disabled>Reset</button>
     </form>
   </div>
-  <div id="resultDiv">
+  <div id="resultDivContainer" class="hidden">
+    <div class="button-group">
+      <button id="inline-view" class="view-btn">
+        <img src="img/text.png" alt="Inline View">
+      </button>
+      <button id="list-view" class="view-btn">
+        <img src="img/list.png" alt="List View">
+      </button>
+      <button id="columns-view" class="view-btn">
+        <img src="img/columns.png" alt="Columns View">
+      </button>
+    </div>
+    <div id="resultDiv">
+    </div>
   </div>
 </body>
 
