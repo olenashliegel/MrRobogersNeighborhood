@@ -25,7 +25,7 @@ This project was created using HTML, CSS, and JavaScript technologies.
 
 ## Tests
 ```
-##Describe: isStringNumeric()
+Describe: isStringNumeric()
 Test1: "It should return true when input string contains only number"
 Code: 
 const inputTextTest1 = "4204"
